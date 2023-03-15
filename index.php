@@ -30,6 +30,13 @@ $listPertemuan = array(
             new TugasItem("p4/latihan2.php", "Latihan 2", "Tabel Perkalian", "2023-03-09"),
             new TugasItem("p4/latihan3.php", "Latihan 3", "Kalkulator Deret Bilangan Ganjil Mod 3", "2023-03-09"),
         )
+    ),
+    new Pertemuan(
+        "Pertemuan #6", 
+        array(
+            new TugasItem("p6/latihan1.php", "Latihan 1", "Array 1 Dimensi", "2023-03-15"),
+            new TugasItem("p6/latihan2.php", "Latihan 2", "Array 2 Dimensi", "2023-03-15"),
+        )
     )
 )
 ?>
