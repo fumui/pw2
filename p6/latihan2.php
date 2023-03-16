@@ -1,53 +1,15 @@
 <?php
     $videoIdsOfEachTalents = array(
-        "Ayunda Risu" => array (
-            "IGviVpVE1fA",
-            "N9M5jX9z5cQ",
-            "PYzTq7YEPBI"
-        ),
-        "Moona Hoshinova" => array (
-            "q4N7EhUWOAA",
-            "stmZAThUl64",
-            "LXRSp8QbOeg"
-        ),
-        "Airani Iofifteen" => array (
-            "jaf_SBcDhFU",
-            "beSTVUWjDPI",
-            "mDfG11QYZl4"
-        ),
-        "Kureiji Ollie" => array (
-            "oIzQmoz1bE4",
-            "2ZqtRc3fa_s",
-            "wFTSE4h4SSs"
-        ),
-        "Anya Melfissa" => array (
-            "mqwRg9ZgANI",
-            "yM2_YycccsM",
-            "2UP3DO56dh4"
-        ),
-        "Pavolia Reine" => array (
-            "MxwV963ZNEU",
-            "VFpOBazE3rs",
-            "dYvQcVG_dVg"
-        ),
-        "Vestia Zeta" => array (
-            "wQ1_0oeXW6M",
-            "Q2GSUd-rhlE",
-            "WDueRRGIKzw"
-        ),
-        "Kaela Kovalskia" => array (
-            "MRg1OuBU_i8",
-        ),
-        "Kobo Kanaeru" => array (
-            "SF-_47-oCtk",
-            "MK78JU18SxE",
-            "iiw9Z1I1AcE"
-        ),
-        "HoloID Collab" => array (
-            "Wp90CrP-s_8",
-            "lFQW5S_xH1o",
-            "wlyRGXUwjVA"
-        ),
+        "Ayunda Risu"       => array ( "IGviVpVE1fA", "N9M5jX9z5cQ", "PYzTq7YEPBI"),
+        "Moona Hoshinova"   => array ( "q4N7EhUWOAA", "stmZAThUl64", "LXRSp8QbOeg"),
+        "Airani Iofifteen"  => array ( "jaf_SBcDhFU", "beSTVUWjDPI", "mDfG11QYZl4"),
+        "Kureiji Ollie"     => array ( "oIzQmoz1bE4", "2ZqtRc3fa_s", "wFTSE4h4SSs"),
+        "Anya Melfissa"     => array ( "mqwRg9ZgANI", "yM2_YycccsM", "2UP3DO56dh4"),
+        "Pavolia Reine"     => array ( "MxwV963ZNEU", "VFpOBazE3rs", "dYvQcVG_dVg"),
+        "Vestia Zeta"       => array ( "wQ1_0oeXW6M", "Q2GSUd-rhlE", "WDueRRGIKzw"),
+        "Kaela Kovalskia"   => array ( "MRg1OuBU_i8"),
+        "Kobo Kanaeru"      => array ( "SF-_47-oCtk", "MK78JU18SxE", "iiw9Z1I1AcE"),
+        "HoloID Collab"     => array ( "Wp90CrP-s_8", "lFQW5S_xH1o", "wlyRGXUwjVA"),
     );
 ?>
 <head>
