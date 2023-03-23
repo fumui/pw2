@@ -44,7 +44,7 @@ $listPertemuan = array(
             new TugasItem("p7/latihan1.php", "Latihan 1", "Basic UDF", "2023-03-24"),
             new TugasItem("p7/latihan2.php", "Latihan 2", "Aritmatika Menggunakan Fungsi", "2023-03-24"),
             new TugasItem("p7/latihan3.php", "Latihan 3", "Repeat func", "2023-03-24"),
-            new TugasItem("p7/tugas.php", "Latihan 1", "Materi Pemrograman PHP", "2023-03-24"),
+            new TugasItem("p7/tugas.php", "Tugas", "Materi Pemrograman PHP", "2023-03-24"),
         )
     )
 )
