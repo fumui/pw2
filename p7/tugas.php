@@ -575,7 +575,7 @@ function displayFormMatrix()
                 <h3 class="float-md-start mb-0">Pertemuan 7</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
                     <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../">Home</a>
-                    <a class="nav-link fw-bold py-1 px-0 <?= $backButtonActiveStyle ?>" aria-current="page" href="./latihan1.php">Back</a>
+                    <a class="nav-link fw-bold py-1 px-0 <?= $backButtonActiveStyle ?>" aria-current="page" href="./tugas.php">Back</a>
                 </nav>
             </div>
         </header>
