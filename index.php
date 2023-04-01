@@ -46,6 +46,13 @@ $listPertemuan = array(
             new TugasItem("p7/latihan3.php", "Latihan 3", "Repeat func", "2023-03-24"),
             new TugasItem("p7/tugas.php", "Tugas", "Materi Pemrograman PHP", "2023-03-24"),
         )
+        ),
+    new Pertemuan(
+        "Pertemuan #8",
+        array(
+            new TugasItem("p8/latihan1.php", "Latihan 1", "Fungsi Tanggal", "2023-03-29"),
+            new TugasItem("p8/latihan2.php", "Latihan 2", "Fungsi String", "2023-03-29"),
+        )
     )
 )
 ?>
