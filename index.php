@@ -87,6 +87,18 @@ $listPertemuan = array(
             new TugasItem("p12/tugas/form_berita.php", "Tugas 4", "Form Tambah, Edit, Hapus Berita", "2023-05-20"),
             new TugasItem("p12/tugas/tampil_data.php", "Tugas 5", "Tampil Data", "2023-05-20"),
         )
+    ),
+    new Pertemuan(
+        "Pertemuan #13",
+        array(
+            new TugasItem("p13/formsearch.php", "Latihan 1", "Cari Berdasarkan 1 kolom", "2023-05-27"),
+            new TugasItem("p13/formsearch2.php", "Latihan 2", "Cari Berdasarkan 2 kolom", "2023-05-27"),
+            new TugasItem("p13/sorting.php", "Latihan 3", "Sorting Menurun", "2023-05-27"),
+            new TugasItem("p13/sorting2.php", "Latihan 4", "Sorting Menaik", "2023-05-27"),
+            new TugasItem("p13/tugas.php", "Tugas 1", "Searching", "2023-05-27"),
+            new TugasItem("p13/tugas2.php", "Tugas 2", "Sorting", "2023-05-27"),
+            new TugasItem("p13/tugas3.php", "Tugas 3", "+ Paginasi", "2023-05-27"),
+        )
     )
 )
     ?>
