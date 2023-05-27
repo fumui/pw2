@@ -1,10 +1,12 @@
 <?php
 include "koneksi.php";
 $query = 'SELECT * FROM matkul WHERE TRUE';
+$count = 'SELECT COUNT(*) FROM matkul WHERE TRUE';
 $nama = '';
 if (isset($_POST['nama'])){
     $nama = $_POST['nama'];
     $query = $query . " AND nama LIKE '%$nama%'";
+    $count = $count . " AND nama LIKE '%$nama%'";
 }
 $kolom = 'id';
 if (isset($_POST['kolom'])){
@@ -26,7 +28,7 @@ if (isset($_POST['limit'])){
 }
 $offset = ($page - 1) * $limit;
 $query = $query . " LIMIT $limit OFFSET $offset";
-echo $query;
+
 $hasil = mysqli_query($conn, $query);
 ?>
 <html>
@@ -86,6 +88,13 @@ $hasil = mysqli_query($conn, $query);
         }
         ?>
     </table>
+    <br>
+    <?php
+        $hasil = mysqli_query($conn, $count);
+        $total = mysqli_fetch_array($hasil);
+
+        echo "Showing $limit data out of $total[0]";
+    ?>
 </body>
 
 </html>
