@@ -99,6 +99,13 @@ $listPertemuan = array(
             new TugasItem("p13/tugas2.php", "Tugas 2", "Sorting", "2023-05-27"),
             new TugasItem("p13/tugas3.php", "Tugas 3", "+ Paginasi", "2023-05-27"),
         )
+        ),
+    new Pertemuan(
+        "Pertemuan #14",
+        array(
+            new TugasItem("p14/form.php", "Latihan 1", "Form Kirim Barang", "2023-06-02"),
+            new TugasItem("p14/tugas.php", "Tugas 1", "Contoh Lain", "2023-06-02"),
+        )
     )
 )
     ?>
