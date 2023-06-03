@@ -1,0 +1,19 @@
+<?php
+
+    class koneksi {
+        private $servername = "localhost";
+        private $username = "root";
+        private $password = "";
+        private $dbname = "lat_dbase";
+        public function get_koneksi() {
+            $conn = mysqli_connect($this->servername, $this->username, $this->password, $this->dbname);
+            if (mysqli_connect_errno()) {
+                echo "Koneksi database gagal: ". mysqli_connect_error();
+            }
+            return $conn;
+        }
+    }
+
+    $konek = new koneksi();
+    $koneksi = $konek->get_koneksi();
+?>

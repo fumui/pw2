@@ -100,13 +100,25 @@ $listPertemuan = array(
             new TugasItem("p13/tugas3.php", "Tugas 3", "+ Paginasi", "2023-05-27"),
         )
         ),
-    new Pertemuan(
-        "Pertemuan #14",
-        array(
-            new TugasItem("p14/form.php", "Latihan 1", "Form Kirim Barang", "2023-06-02"),
-            new TugasItem("p14/tugas.php", "Tugas 1", "Contoh Lain", "2023-06-02"),
+        new Pertemuan(
+            "Pertemuan #14",
+            array(
+                new TugasItem("p14/form.php", "Latihan 1", "Form Kirim Barang", "2023-06-02"),
+                new TugasItem("p14/tugas.php", "Tugas 1", "Contoh Lain", "2023-06-02"),
+            )
+        ),
+        new Pertemuan(
+            "Pertemuan #15",
+            array(
+                new TugasItem("p15/session1.php", "Latihan 1", "Session 1", "2023-06-03"),
+                new TugasItem("p15/session2.php", "Latihan 2", "Session 2", "2023-06-03"),
+                new TugasItem("p15/session3.php", "Latihan 3", "Session 3", "2023-06-03"),
+                new TugasItem("p15/login.php", "Latihan 4", "Login", "2023-06-03"),
+                new TugasItem("p15/cek_login.php", "Latihan 4", "Cek Login (hanya untuk `action` dari form, tidak untuk diakses langsung)", "2023-06-03"),
+                new TugasItem("p15/logout.php", "Latihan 4", "Logout", "2023-06-03"),
+                new TugasItem("p15/dashboard.php", "Latihan 4", "Dashboard", "2023-06-03"),
+            )
         )
-    )
 )
     ?>
 
