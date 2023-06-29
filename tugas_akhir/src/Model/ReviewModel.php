@@ -1,6 +1,7 @@
 <?php
 
-class Review
+namespace Model;
+class ReviewModel
 {
     private $id;
     private $bookId;
@@ -126,8 +127,8 @@ class Review
         // Fetch the record as an associative array
         $reviewData = $result->fetch_assoc();
 
-        // Create a Review object
-        $review = new Review(
+        // Create a ReviewModel object
+        $review = new ReviewModel(
             $reviewData['id'],
             $reviewData['book_id'],
             $reviewData['user_id'],
@@ -163,9 +164,9 @@ class Review
 
         $reviews = [];
 
-        // Loop through the result and create Review objects
+        // Loop through the result and create ReviewModel objects
         while ($reviewData = $result->fetch_assoc()) {
-            $review = new Review(
+            $review = new ReviewModel(
                 $reviewData['id'],
                 $reviewData['book_id'],
                 $reviewData['user_id'],

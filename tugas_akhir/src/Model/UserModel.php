@@ -1,6 +1,7 @@
 <?php
 
-class User
+namespace Model;
+class UserModel
 {
     private $id;
     private $username;
@@ -219,8 +220,8 @@ class User
         // Get the user data
         $userData = $result->fetch_assoc();
 
-        // Create and return a new User object
-        return new User(
+        // Create and return a new UserModel object
+        return new UserModel(
             $userData['id'],
             $userData['username'],
             $userData['email'],
@@ -242,7 +243,7 @@ class User
      * @param string|null $name     The name to search/filter by (optional).
      * @param string|null $level    The level to search/filter by (optional).
      *
-     * @return array    The array of User objects.
+     * @return array    The array of UserModel objects.
      */
     public static function getList($page, $perPage, $name = null, $level = null)
     {
@@ -297,12 +298,12 @@ class User
         $stmt->close();
         $db->close();
 
-        // Create an array to store the User objects
+        // Create an array to store the UserModel objects
         $users = [];
 
-        // Loop through the result set and create User objects
+        // Loop through the result set and create UserModel objects
         while ($userData = $result->fetch_assoc()) {
-            $user = new User(
+            $user = new UserModel(
                 $userData['id'],
                 $userData['username'],
                 $userData['email'],
@@ -318,7 +319,7 @@ class User
             $users[] = $user;
         }
 
-        // Return the array of User objects
+        // Return the array of UserModel objects
         return $users;
     }
 
@@ -339,7 +340,7 @@ class User
      * @param string $username The username.
      * @param string $password The password.
      *
-     * @return User|null   The User object if authentication succeeds, null otherwise.
+     * @return UserModel|null   The UserModel object if authentication succeeds, null otherwise.
      */
     public static function login($username, $password)
     {
@@ -367,14 +368,14 @@ class User
 
         // Check if a user was found
         if ($result->num_rows === 0) {
-            return null; // User not found
+            return null; // UserModel not found
         }
 
         // Get the user data
         $userData = $result->fetch_assoc();
 
-        // Return User object
-        return new User(
+        // Return UserModel object
+        return new UserModel(
             $userData['id'],
             $userData['username'],
             $userData['email'],

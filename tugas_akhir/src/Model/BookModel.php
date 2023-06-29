@@ -1,6 +1,7 @@
 <?php
 
-class Book
+namespace Model;
+class BookModel
 {
     private $id;
     private $categoryId;
@@ -179,8 +180,8 @@ class Book
         // Fetch the record as an associative array
         $bookData = $result->fetch_assoc();
 
-        // Create a Book object
-        $book = new Book(
+        // Create a BookModel object
+        $book = new BookModel(
             $bookData['id'],
             $bookData['category_id'],
             $bookData['title'],
@@ -219,9 +220,9 @@ class Book
 
         $books = [];
 
-        // Loop through the result and create Book objects
+        // Loop through the result and create BookModel objects
         while ($bookData = $result->fetch_assoc()) {
-            $book = new Book(
+            $book = new BookModel(
                 $bookData['id'],
                 $bookData['category_id'],
                 $bookData['title'],
@@ -325,9 +326,9 @@ class Book
 
         $books = [];
 
-        // Loop through the result and create Book objects
+        // Loop through the result and create BookModel objects
         while ($bookData = $result->fetch_assoc()) {
-            $book = new Book(
+            $book = new BookModel(
                 $bookData['id'],
                 $bookData['category_id'],
                 $bookData['title'],

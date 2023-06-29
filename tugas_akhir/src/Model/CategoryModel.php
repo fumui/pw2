@@ -1,6 +1,7 @@
 <?php
 
-class Category
+namespace Model;
+class CategoryModel
 {
     private $id;
     private $name;
@@ -107,7 +108,7 @@ class Category
         $categoryData = $result->fetch_assoc();
 
         // Create and return Category object
-        return new Category(
+        return new CategoryModel(
             $categoryData['id'],
             $categoryData['name'],
             $categoryData['created_by'],
@@ -140,7 +141,7 @@ class Category
 
         // Loop through the result and create Category objects
         while ($categoryData = $result->fetch_assoc()) {
-            $category = new Category(
+            $category = new CategoryModel(
                 $categoryData['id'],
                 $categoryData['name'],
                 $categoryData['created_by'],

@@ -1,6 +1,7 @@
 <?php
 
-class Download
+namespace Model;
+class DownloadModel
 {
     private $id;
     private $bookId;
@@ -100,8 +101,8 @@ class Download
         // Fetch the record as an associative array
         $downloadData = $result->fetch_assoc();
 
-        // Create a Download object
-        $download = new Download(
+        // Create a DownloadModel object
+        $download = new DownloadModel(
             $downloadData['id'],
             $downloadData['book_id'],
             $downloadData['user_id'],
@@ -135,9 +136,9 @@ class Download
 
         $downloads = [];
 
-        // Loop through the result and create Download objects
+        // Loop through the result and create DownloadModel objects
         while ($downloadData = $result->fetch_assoc()) {
-            $download = new Download(
+            $download = new DownloadModel(
                 $downloadData['id'],
                 $downloadData['book_id'],
                 $downloadData['user_id'],
