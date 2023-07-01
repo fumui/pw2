@@ -132,12 +132,19 @@ class UserModel
 
         // Prepare the query
         $stmt = $db->prepare("INSERT INTO users (id, username, email, password, level, created_by, created_at, updated_by, updated_at, deleted) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-
+        // Check if the query preparation was successful
+        if (!$stmt) {
+            echo "Error preparing query: " . $db->error;
+            $db->close();
+            return;
+        }
         // Bind parameters
         $stmt->bind_param("sssssssssi", $this->id, $this->username, $this->email, $this->password, $this->level, $this->createdBy, $this->createdAt, $this->updatedBy, $this->updatedAt, $this->deleted);
 
         // Execute the query
-        $stmt->execute();
+        if (!$stmt->execute()) {
+            echo "Error executing query: " . $stmt->error;
+        }
 
         // Close the statement and database connection
         $stmt->close();
@@ -154,12 +161,19 @@ class UserModel
 
         // Prepare the query
         $stmt = $db->prepare("UPDATE users SET username=?, email=?, password=?, level=?, updated_by=?, updated_at=?, deleted=? WHERE id=?");
-
+        // Check if the query preparation was successful
+        if (!$stmt) {
+            echo "Error preparing query: " . $db->error;
+            $db->close();
+            return;
+        }
         // Bind parameters
         $stmt->bind_param("ssssssis", $this->username, $this->email, $this->password, $this->level, $this->updatedBy, $this->updatedAt, $this->deleted, $this->id);
 
         // Execute the query
-        $stmt->execute();
+        if (!$stmt->execute()) {
+            echo "Error executing query: " . $stmt->error;
+        }
 
         // Close the statement and database connection
         $stmt->close();

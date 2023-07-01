@@ -2,7 +2,7 @@
 
 // Application Settings
 return [
-    'app_name' => 'Epublib',
+    'invalidLogin' => 'Invalid username or password',
     'timezone' => 'UTC',
     'debug' => true,
     'base_path' => '/web2/tugas_akhir',
